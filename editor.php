@@ -4,7 +4,7 @@
   /** Configuration settings **/
   $label = "Editor";
   $title = "Card Editor";
-  $description = "Margoulin's RFC card editor";
+  $description = "Margoulin's NFC card editor";
   require_once('config/load.php');
   /******* END SETTINGS *******/
 ?>
