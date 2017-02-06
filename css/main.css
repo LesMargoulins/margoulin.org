@@ -1,0 +1,157 @@
+.switchico {
+  padding-top: 4px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+          transition:         transform .2s ease-in-out;
+  -webkit-transform: scale(1.5, 1.5);
+          transform: scale(1.5, 1.5);
+}
+
+.switchico:hover {
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+.mainnav {
+  height: 65px;
+  padding-left: 15px;
+  padding-top: 17px;
+  color: #FFF;
+  background-color: #333344;
+  border-radius: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navtitle {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  padding-top: 0px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.navtitle:hover {
+  color: #88BBFF;
+}
+
+.navico {
+  float: left;
+  margin-top: 12px;
+}
+
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.tableparam {
+  float: right;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.tableparam:hover {
+  color: rgb(0, 125, 129);
+}
+
+.sover {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.sover:hover {
+  background-color: #eff4f6;
+}
+
+.center {
+  text-align: center;
+}
+
+#title {
+  margin-top: 0px;
+}
+
+#taginfo {
+  font-weight: bolder;
+  resize: none;
+  font-size: 10pt;
+  font-family: monospace;
+  line-height: normal !important;
+  width: 100%;
+}
+
+#result {
+  padding-top: 30px;
+  font-size: 10pt;
+  font-family: monospace;
+  line-height: normal !important;
+}
+
+#infoline {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#sure {
+  color: #0066BB;
+  font-weight: bold;
+}
+
+#infoPopup {
+  font-family: monospace;
+}
+
+#notsure {
+  color: #BB2200;
+}
+
+#infotag {
+  color: #BB9900;
+}
+
+.lined {
+  padding: 5px;
+}
+
+.lineinfo {
+  cursor: pointer;
+}
+
+.lineinfo:hover {
+  background-color: #DDD;
+}
