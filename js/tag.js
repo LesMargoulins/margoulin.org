@@ -184,7 +184,7 @@ function prepareClick() {
   $(".i13").click(function () {
     var hex = $(".i13").text();
     hex = hex.replace(/\s/g, '');
-    infos = "";
+    infos = "Change only on first use. Maybe born ID or time (Same value on 2 cards in same born with ~1/2 seconds intervals)";
     BootstrapDialog.show({
         title: "Information (<span id='hextitle'>" + hex + "</span>)",
         message: "<span id='infoPopup'><span id='calc'>" + getinfos(hex) + "</span><hr>" + infos + "</span>"
@@ -254,9 +254,10 @@ function newtag()
   $("#result").append("<span id='infoline'>11      </span> <b class='lineinfo i11' id='infotag'>" + line[10] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)</br>");
   $("#result").append("<span id='infoline'>12      </span> <b class='lineinfo i12' id='infotag'>" + line[11] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)</br>");
   $("#result").append("<span id='infoline'>13      </span> <b class='lineinfo i13' id='notsure'>" + line[12] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
-  $("#result").append("<span id='infoline'>14      </span> <b class='lineinfo i14' id='notsure'>" + line[13] + "</b> <i class='fa fa-caret-right'></i> OTP? - First Used (date/timestamp?) <b>" + neverused + "</b></br>");
+  $("#result").append("<span id='infoline'>14      </span> <b class='lineinfo i14' id='notsure'>" + line[13] + "</b> <i class='fa fa-caret-right'></i> OTP? - First Used (date or born ID?) <b>" + neverused + "</b></br>");
   $("#result").append("<span id='infoline'>15      </span> <b class='lineinfo i15' id='notsure'>" + line[14] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
   $("#result").append("<span id='infoline'>16      </span> <b class='lineinfo i16' id='notsure'>" + line[15] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
+  $("#result").append("<div id='theoricUsage'>Theoric usages left: <b>" + (loads - used) + "</b></div></br>");
   prepareClick();
 }
 

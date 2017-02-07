@@ -4,7 +4,7 @@
   /** Configuration settings **/
   $label = "Index";
   $title = "Margoulin";
-  $description = "Dashboard page";
+  $description = "Dashboard";
   require_once('config/load.php');
   /******* END SETTINGS *******/
 ?>
@@ -41,8 +41,18 @@
                   <hr style="margin-top: 0px;"/>
                 </div>
                 <div class="col-lg-6">
-                  <p>Hello <b><? echo $_SESSION['logged']; ?></b>.</p></br>
-                  Current card &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once('system/projectsSelect.php'); /* SCRIPTS */ ?>
+                  <p>Bonjour <b><? echo $_SESSION['logged']; ?></b>.</p></br>
+                  <p>
+                    <b>margoulin</b> <i>\maʁ.ɡu.lɛ̃\</i> masculin</br></br>
+
+                    <p><b>1.</b> Petit détaillant, petit patron.</br></p>
+                    <p><b>2.</b> Marchand peu scrupuleux.</br>
+                      <div id="tab"><i>Auteur de sujets sur Barbara Hendricks ou Alain Tanner, il s’était signalé en 1996 avec Un marchand, des artistes et des collectionneurs, autre docu dans lequel toute la corporation - à commencer par le galeriste parisien Pierre Nahon - passait pour une bande de margoulins vénaux, cyniques et fats. — (Guy Ribes, pipeau, l’artiste ! de Gilles Renault pour Libération le 1er mars 2016)</i></div></br></p>
+                    <p><b>3.</b> Petit trafiquant indélicat et sans envergure, individu de mauvaise foi.</br></p>
+                    <p><b>4.</b> Individu incompétent et peu scrupuleux en affaires.</br>
+                      <div id="tab"><i>Il vivait dans la hantise permanente d'un coup du sort - faillite bancaire, écroulement du marché immobilier, filouterie d'un margoulin - qui réduirait à néant la pelote qu'il avait patiemment amassée. — (Antoine Bello, Mateo, 2013 ; collection Blanche, p. 138)</i></div></br></p>
+                  </p>
+
                 </div>
                 <div class="col-lg-6">
                   <div class="panel-group">

@@ -51,7 +51,7 @@
                       <input class="form-control" type="text" id="cardname"></input>
                     </div>
                     <div class="form-group">
-                      <?php require_once('system/cardtype.php'); /* SCRIPTS */ ?>
+                      <?php require_once('system/cardtype.php'); /* SCRIPTS */ ?> <a href="http://www.rtm.fr/guide-voyageur/acheter/deplacements-occasionnels" target="_blank">Infos</a>
                     </div>
                     <div class="form-group">
                       <button id="load" class="btn btn-primary" onclick="newtag();"><i class="fa fa-search"></i> Analyse</button>
