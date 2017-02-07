@@ -12,7 +12,7 @@
   /******* END SETTINGS *******/
 ?>
 
-<html lang="<? echo $LANG; ?>">
+<html lang="<?php echo $LANG; ?>">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,7 @@
                     if ($_POST['type'] == "login")
                     {
                       if (empty($_POST['login']) || empty($_POST['password'])) {
-                        ?> <p style="color: #DD0000">You must fill all fields.</p> <?
+                        ?> <p style="color: #DD0000">You must fill all fields.</p> <?php
                       }
                       else
                       {
@@ -61,14 +61,14 @@
                           return;
                         }
                         $reponse->closeCursor();
-                        ?> <p style="color: #DD0000">Wrong username / password.</p> <?
+                        ?> <p style="color: #DD0000">Wrong username / password.</p> <?php
                       }
                     }
                     else if ($_POST['type'] == "register")
                     {
                       $default = 1;
                       if (empty($_POST['login']) || empty($_POST['password']) || empty($_POST['password2']) || empty($_POST['mail'])) {
-                        ?> <p style="color: #DD0000">You must fill all fields.</p> <?
+                        ?> <p style="color: #DD0000">You must fill all fields.</p> <?php
                       }
                       else {
                         $login =  makeSafe($_POST['login']);
@@ -78,44 +78,44 @@
                         $check = true;
                         if (!preg_match('/^[\w]+$/', $login)) {
                           $check = false;
-                          ?> <p style="color: #DD0000">Your username contains forbidden characters.</p> <?
+                          ?> <p style="color: #DD0000">Your username contains forbidden characters.</p> <?php
                         }
                         if (strlen($login) < 3 || strlen($login) > 20) {
                           $check = false;
-                          ?> <p style="color: #DD0000">Your username must be between 3 and 20 characters.</p> <?
+                          ?> <p style="color: #DD0000">Your username must be between 3 and 20 characters.</p> <?php
                         }
                         if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
                           $check = false;
-                          ?> <p style="color: #DD0000">You must use a valid email adress.</p> <?
+                          ?> <p style="color: #DD0000">You must use a valid email adress.</p> <?php
                         }
                         if (strstr($mail, '@yopmail')) {
                           $check = false;
-                          ?> <p style="color: #DD0000">This email domain is not allowed.</p> <?
+                          ?> <p style="color: #DD0000">This email domain is not allowed.</p> <?php
                         }
                         if (strlen($pass) < 8) {
                           $check = false;
-                          ?> <p style="color: #DD0000">Your password must be at least 8 characters.</p> <?
+                          ?> <p style="color: #DD0000">Your password must be at least 8 characters.</p> <?php
                         }
                         if (!preg_match('/[A-Z]+[a-z]+[0-9]+/', $pass)) {
                           $check = false;
-                          ?> <p style="color: #DD0000">Your password need to have uppercases, lowercases and numbers.</p> <?
+                          ?> <p style="color: #DD0000">Your password need to have uppercases, lowercases and numbers.</p> <?php
                         }
                         if ($pass != $pass2) {
                           $check = false;
-                          ?> <p style="color: #DD0000">Passwords differs!</p> <?
+                          ?> <p style="color: #DD0000">Passwords differs!</p> <?php
                         }
                         if ($check) {
                           $reponse = $bdd->prepare('SELECT * FROM users WHERE login = ?');
                           $reponse->execute(array($login));
                           while ($donnees = $reponse->fetch()) {
-                            ?> <p style="color: #DD0000">Username already used.</p> <?
+                            ?> <p style="color: #DD0000">Username already used.</p> <?php
                             $check = false;
                           }
                           $reponse->closeCursor();
                           $reponse = $bdd->prepare('SELECT * FROM users WHERE mail = ?');
                           $reponse->execute(array($mail));
                           while ($donnees = $reponse->fetch()) {
-                            ?> <p style="color: #DD0000">EMail already used.</p> <?
+                            ?> <p style="color: #DD0000">EMail already used.</p> <?php
                             $check = false;
                           }
                           $reponse->closeCursor();
@@ -127,7 +127,7 @@
                             	'mail' => $mail,
                             	'password' => $pass
                             	));
-                            ?> <p style="color: #DD0000">Registration succeed. You can now log in.</p> <?
+                            ?> <p style="color: #DD0000">Registration succeed. You can now log in.</p> <?php
                           }
                         }
                       }
