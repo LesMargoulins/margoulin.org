@@ -140,7 +140,7 @@
                 <div class="panel-group" id="accordion">
                   <div class="panel panel-default">
                     <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#login"><b>Login</b></a></div>
-                    <div id="login" class="panel-collapse collapse <? if ($default == 0) { echo "in";} ?>">
+                    <div id="login" class="panel-collapse collapse <?php if ($default == 0) { echo "in"; } ?>">
                       <div class="panel-body">
                         <form action="login.php" method="post">
                         <div class="form-group">
@@ -160,7 +160,7 @@
 
                   <div class="panel panel-default">
                     <div class="panel-heading"><a data-toggle="collapse" data-parent="#accordion" href="#register"><b>Register</b></a></div>
-                    <div id="register" class="panel-collapse collapse <? if ($default == 1) { echo "in";} ?>">
+                    <div id="register" class="panel-collapse collapse <?php if ($default == 1) { echo "in"; } ?>">
                     <div class="panel-body">
                       <form action="login.php" method="post">
                       <div class="form-group">
