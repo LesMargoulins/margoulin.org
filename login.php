@@ -51,7 +51,7 @@
                       {
                         $login = makeSafe($_POST['login']);
                         $pass = makeSafe($_POST['password']);
-                        $pass = sha1($pass."Fe3ZeN_$>");
+                        $pass = hash('sha512', $pass."Fe3ZeN_$>");
                         $reponse = $bdd->prepare('SELECT * FROM users WHERE login = ? AND password = ?');
                         $reponse->execute(array($login, $pass));
                         while ($donnees = $reponse->fetch()) {
@@ -96,10 +96,6 @@
                           $check = false;
                           ?> <p style="color: #DD0000">Your password must be at least 8 characters.</p> <?php
                         }
-                        if (!preg_match('/[A-Z]+[a-z]+[0-9]+/', $pass)) {
-                          $check = false;
-                          ?> <p style="color: #DD0000">Your password need to have uppercases, lowercases and numbers.</p> <?php
-                        }
                         if ($pass != $pass2) {
                           $check = false;
                           ?> <p style="color: #DD0000">Passwords differs!</p> <?php
@@ -120,7 +116,7 @@
                           }
                           $reponse->closeCursor();
                           if ($check) {
-                            $pass = sha1($pass."Fe3ZeN_$>");
+                            $pass = hash('sha512', $pass."Fe3ZeN_$>");
                             $req = $bdd->prepare('INSERT INTO users(login, mail, password, createddate) VALUES(:login, :mail, :password, CURRENT_TIMESTAMP)');
                             $req->execute(array(
                             	'login' => $login,

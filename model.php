@@ -9,7 +9,7 @@
   /******* END SETTINGS *******/
 ?>
 
-<html lang="<? echo $LANG; ?>">
+<html lang="<?php echo $LANG; ?>">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,9 +35,9 @@
             <div class="row">
                 <div class="col-lg-12">
                   <h1 id="title"><b><?php echo $title; ?></b></h1>
-                  <? if ($description != "") { ?>
+                  <?php if ($description != "") { ?>
                   <h4 style="margin-left: 2px;"><?php echo $description; ?></br></h4>
-                  <? } ?>
+                  <?php } ?>
                   <hr style="margin-top: 0px;"/>
                 </div>
                 <div class="col-lg-6">

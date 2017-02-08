@@ -184,7 +184,7 @@ function prepareClick() {
   $(".i13").click(function () {
     var hex = $(".i13").text();
     hex = hex.replace(/\s/g, '');
-    infos = "Change only on first use. Maybe born ID or time (Same value on 2 cards in same born with ~1/2 seconds intervals)";
+    infos = "";
     BootstrapDialog.show({
         title: "Information (<span id='hextitle'>" + hex + "</span>)",
         message: "<span id='infoPopup'><span id='calc'>" + getinfos(hex) + "</span><hr>" + infos + "</span>"
@@ -194,7 +194,7 @@ function prepareClick() {
   $(".i14").click(function () {
     var hex = $(".i14").text();
     hex = hex.replace(/\s/g, '');
-    infos = "";
+    infos = "Change only on first use. Certainly born ID (Same value on multiple cards)";
     BootstrapDialog.show({
         title: "Information (<span id='hextitle'>" + hex + "</span>)",
         message: "<span id='infoPopup'><span id='calc'>" + getinfos(hex) + "</span><hr>" + infos + "</span>"
