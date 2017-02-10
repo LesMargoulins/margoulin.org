@@ -6,6 +6,9 @@
     header('Location: login.php');
     return;
   }
+  if ($_SESSION['access'] < 8) {//Need to be MODERATOR
+    return;
+  }
 ?>
 
 

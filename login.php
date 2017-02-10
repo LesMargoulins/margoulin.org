@@ -56,6 +56,14 @@
                         $reponse->execute(array($login, $pass));
                         while ($donnees = $reponse->fetch()) {
                           $_SESSION['logged'] = $login;
+                          $_SESSION['id'] = $donnees["id"];
+                          $_SESSION['team'] = $donnees["team"];
+                          $access = $bdd->prepare('SELECT * FROM team WHERE id = ?');
+                          $access->execute(array($_SESSION['team']));
+                          $accessdata = $access->fetch();
+                          $_SESSION['access'] = $accessdata["access"];
+                          $_SESSION['teamname'] = $accessdata["name"];
+                          $access->closeCursor();
                           header('Location: index.php');
                           $reponse->closeCursor();
                           return;

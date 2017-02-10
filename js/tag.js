@@ -264,7 +264,25 @@ function newtag()
 
 
 function deleteCart() {
-  alert("To do!");
+  $.post( "system/deleteCard.php", {id: $("#projectselector").val()}, function( data ) {
+    while (data[0] == '\n' || data[0] == ' ')
+      data = data.substr(1);
+    if (data == "OK") {
+      title = "Suppression réussie";
+      msg = "Carte supprimée. Actualisez la page.";
+      type = BootstrapDialog.TYPE_SUCCESS;
+    }
+    else {
+      title = "Suppression annulée";
+      msg = "Erreur inconnue. Avez-vous les droits nécessaires?";
+      type = BootstrapDialog.TYPE_DANGER;
+    }
+    BootstrapDialog.show({
+        title: title,
+        message: msg,
+        type: type
+    });
+  });
 }
 
 function addcart() {
@@ -278,7 +296,7 @@ function addcart() {
     }
     else {
       title = "Enregistrement annulé";
-      msg = "Erreur inconnue. Carte non enregistrée.";
+      msg = "Erreur inconnue. Avez-vous les droits nécessaires?";
       type = BootstrapDialog.TYPE_DANGER;
       if (data == "ERROR1")
         msg = "Ce nom de carte est déjà utilisé.";
@@ -295,7 +313,6 @@ function addcart() {
       else if (data.substr(0, 6) == "ERROR7")
         msg = "Cette carte existe déjà. Son nom est <b>" + data.substr(6) + "</b>.";
       else {
-        alert(data);
       }
     }
     BootstrapDialog.show({

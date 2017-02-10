@@ -55,13 +55,17 @@
                     </div>
                     <div class="form-group">
                       <button id="load" class="btn btn-primary" onclick="newtag();"><i class="fa fa-search"></i> Analyse</button>
-                      <button class="btn btn-success" onclick="addcart();" id="save"><i class="fa fa-upload"></i> Save card</button>
+                      <?php if ($_SESSION['access'] > 8) { //If Moderator ?>
+                        <button class="btn btn-success" onclick="addcart();" id="save"><i class="fa fa-upload"></i> Save card</button>
+                      <?php } ?>
                     </div>
                     <hr>
                     <div class="form-group">
                       Current card &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once('system/projectsSelect.php'); /* SCRIPTS */ ?>
                       <button id="load" class="btn btn-primary" onclick="loadCard();"><i class="fa fa-refresh"></i> Reload</button>
-                      <button id="delete" class="btn btn-danger" onclick="deleteCart();"><i class="fa fa-trash"></i> Delete</button>
+                      <?php if ($_SESSION['access'] > 8) { //If Moderator ?>
+                        <button id="delete" class="btn btn-danger" onclick="deleteCart();"><i class="fa fa-trash"></i> Delete</button>
+                      <?php } ?>
                     </div>
                   </form>
                 </br>

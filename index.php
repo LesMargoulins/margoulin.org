@@ -41,7 +41,7 @@
                   <hr style="margin-top: 0px;"/>
                 </div>
                 <div class="col-lg-6">
-                  <p>Bonjour <b><?php echo $_SESSION['logged']; ?></b>.</p></br>
+                  <p>Bonjour <b><?php echo $_SESSION['logged']; ?></b>, vous êtes dans le groupe <b><?php echo $_SESSION['teamname']; ?></b>.</p></br>
                   <p>
                     <b>margoulin</b> <i>\maʁ.ɡu.lɛ̃\</i> masculin</br></br>
 
