@@ -5,6 +5,7 @@
   $label = "Index";
   $title = "Margoulin";
   $description = "Dashboard";
+  $access = 0;
   require_once('config/load.php');
   /******* END SETTINGS *******/
 ?>

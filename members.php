@@ -2,9 +2,9 @@
 
 <?php
   /** Configuration settings **/
-  $label = "Model";
-  $title = "Model";
-  $description = "A model page";
+  $label = "Members";
+  $title = "Members";
+  $description = "The members list";
   $access = 0;
   require_once('config/load.php');
   /******* END SETTINGS *******/

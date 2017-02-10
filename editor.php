@@ -5,6 +5,7 @@
   $label = "Editor";
   $title = "Card Editor";
   $description = "Margoulin's NFC card editor";
+  $access = 0;
   require_once('config/load.php');
   /******* END SETTINGS *******/
 ?>

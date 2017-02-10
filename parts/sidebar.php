@@ -8,6 +8,7 @@
         </li>
         <?php
           foreach ($sidebarPage as $key => $value) {
+            if ($_SESSION["access"] >= $value["access"]) {
         ?>
         <li>
             <a <?php if ($value["title"] == $label) { echo 'class="selected"'; } ?> href="<?php echo $value['url']; ?>">
@@ -15,7 +16,8 @@
                 <i class="fa <?php echo $value['icon']; ?> navico" aria-hidden="true"></i>
             </a>
         </li>
-        <?php } ?>
+        <?php }
+          } ?>
     </ul>
 </div>
 <!-- /#sidebar-wrapper -->

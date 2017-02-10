@@ -3,6 +3,10 @@
 <?php
   /** Configuration settings **/
   session_start();
+  if (isset($_SESSION["logged"])) {
+    header('Location: index.php');
+    return;
+  }
   $label = "Login";
   $title = "Login";
   $description = "";
