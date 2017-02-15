@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <?php
   /** Configuration settings **/
@@ -11,7 +11,8 @@
   $title = "Login";
   $description = "";
   $author = "Anonymous";
-  $build = "1.0";
+  $build = "1.1";
+  require_once('config/lang.php');
   require_once('config/sql.php');
   require_once('config/utilities.php');
   require_once('config/lang.php');

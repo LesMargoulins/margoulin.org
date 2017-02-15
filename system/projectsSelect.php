@@ -3,7 +3,7 @@
     session_start();
   }
   if (!isset($_SESSION['logged'])) {
-    header('Location: login.php');
+    header('Location: margoulin.php');
     return;
   }
 ?>

@@ -8,7 +8,7 @@ require_once('config/utilities.php');
 
 if (isset($_SESSION['logged']) && !empty($_POST['logout'])) {
   session_unset();
-  header('Location: login.php');
+  header('Location: margoulin.php');
   return;
 }
 else if (isset($_SESSION['access']) && $_SESSION['access'] < $access) {

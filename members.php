@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <?php
   /** Configuration settings **/
