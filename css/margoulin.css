@@ -5,7 +5,14 @@ body {
     background-position: top;
 }
 
+.nomarging {
+  margin: 0;
+  padding: 0;
+}
+
 .citation {
+  margin: 0;
+  padding: 0;
   padding-top: 30px;
   color: #FFF;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
@@ -37,5 +44,5 @@ body {
 }
 
 .sound {
-  
+
 }
