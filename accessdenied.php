@@ -5,6 +5,7 @@
   $label = "accessDenied";
   $title = "Access Denied";
   $description = "You don't have access to this page.";
+  $author = "Tanguy Laloix";
   $access = -1;
   require_once('config/load.php');
   /******* END SETTINGS *******/
@@ -37,7 +38,7 @@
                 <div class="col-lg-12">
                   <h1 id="title"><b><?php echo $title; ?></b></h1>
                   <?php if ($description != "") { ?>
-                  <h4 style="margin-left: 2px;"><?php echo $description; ?></br></h4>
+                  <h4 style="margin-left: 2px;"><?php echo $description; ?><br /></h4>
                   <?php } ?>
                   <hr style="margin-top: 0px;"/>
                 </div>

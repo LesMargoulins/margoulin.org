@@ -10,6 +10,8 @@
   $label = "Login";
   $title = "Login";
   $description = "";
+  $author = "Tanguy Laloix";
+  $build = "1.0";
   require_once('config/sql.php');
   require_once('config/utilities.php');
   require_once('config/lang.php');

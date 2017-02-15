@@ -19,7 +19,6 @@ else if (isset($_SESSION['access']) && $_SESSION['access'] < $access) {
 require_once('config/log.php');
 require_once('config/lang.php');
 $projectTitle = "Margoulin";
-$author = "Tanguy Laloix";
 $build = "1.0";
 
 /* Sidebar index */

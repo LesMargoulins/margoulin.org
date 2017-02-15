@@ -8,10 +8,10 @@
 <link href="css/bootstrap-select.min.css" rel="stylesheet">
 <!-- Bootstrap-dialog -->
 <link href="css/bootstrap-dialog.css" rel="stylesheet">
-<? if ($label != "Login") { ?>
+<?php if ($label != "Login") { ?>
 <!-- Sidebar -->
 <link href="css/simple-sidebar.css" rel="stylesheet">
-<? } ?>
+<?php } ?>
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <!-- Custom -->

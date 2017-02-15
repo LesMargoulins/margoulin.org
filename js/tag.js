@@ -51,7 +51,7 @@ function getinfos(hex, start = 0, nb = 8) {
   result += "<tr><td>Decimal value: </td><td><b>" + dec + "</b></td></tr>";
   result += "<tr><td>Timestamp value:</td><td><b>" + timestampToDate(dec) + "</b></td></tr>";
   result += "</table>";
-  result += "</br>";
+  result += "<br />";
   result += "<form class='form-inline' onsubmit='redraw(); return false;'>"
   result += "<div class='form-group'><label class='sr-only' for='startnb'>Start From </label><input id='startnb' type='text' class='form-control' placeholder='0' value='" + start + "'></input></div>"
   result += "<div class='form-group'><label class='sr-only' for='readnb'>Number to read </label><input id='readnb' type='text' class='form-control' placeholder='8' value='" + nb + "'></input></div>"
@@ -233,7 +233,7 @@ function newtag()
   var loadLine = line[7];
   var loads = hexToBinary(loadLine[0] + loadLine[1]);
   if (!passages.valid || !loads.valid) {
-    $("#result").html("Invalid data</br>");
+    $("#result").html("Invalid data<br />");
     return;
   }
   var neverused = "[Already used]";
@@ -241,23 +241,23 @@ function newtag()
     neverused = "[Never used]";
   var loads = parseInt((loads.result).substr(0, 6), 2);
   var used = passages.result.split("1").length-1
-  $("#result").append("<span id='infoline'>&nbsp;1 </span> <b class='lineinfo i1 ' id='sure'>   " + cardid   + "</b> <i class='fa fa-caret-right'></i> Card ID</br>");
-  $("#result").append("<span id='infoline'>&nbsp;2 </span> <b class='lineinfo i2 ' id='notsure'>" + line[1]  + "</b> <i class='fa fa-caret-right'></i> Other ID</br>");
-  $("#result").append("<span id='infoline'>&nbsp;3 </span> <b class='lineinfo i3 ' id='notsure'>" + line[2]  + "</b> <i class='fa fa-caret-right'></i> Other ID</br>");
-  $("#result").append("<span id='infoline'>&nbsp;4 </span> <b class='lineinfo i4 ' id='sure'>   " + line[3]  + "</b> <i class='fa fa-caret-right'></i> Used <b>" + used + " time(s)</b> </span>.</br>");
-  $("#result").append("<span id='infoline'>&nbsp;5 </span> <b class='lineinfo i5 ' id='notsure'>" + bornid   + "</b> <i class='fa fa-caret-right'></i> Validation born ID </br>");
-  $("#result").append("<span id='infoline'>&nbsp;6 </span> <b class='lineinfo i6 ' id='infotag'>" + line[5]  + "</b> <i class='fa fa-caret-right'></i> Change on reload </br>");
-  $("#result").append("<span id='infoline'>&nbsp;7 </span> <b class='lineinfo i7 ' id='infotag'>" + line[6]  + "</b> <i class='fa fa-caret-right'></i> Unknown </br>");
-  $("#result").append("<span id='infoline'>&nbsp;8 </span> <b class='lineinfo i8 ' id='sure'>   " + line[7]  + "</b> <i class='fa fa-caret-right'></i> Loaded <b>" + (loads) + " time(s)</b> (Includes first buy)</br>");
-  $("#result").append("<span id='infoline'>&nbsp;9 </span> <b class='lineinfo i9 ' id='infotag'>" + line[8]  + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)</br>");
-  $("#result").append("<span id='infoline'>10      </span> <b class='lineinfo i10' id='infotag'>" + line[9]  + "</b> <i class='fa fa-caret-right'></i> Unknown </br>");
-  $("#result").append("<span id='infoline'>11      </span> <b class='lineinfo i11' id='infotag'>" + line[10] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)</br>");
-  $("#result").append("<span id='infoline'>12      </span> <b class='lineinfo i12' id='infotag'>" + line[11] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)</br>");
-  $("#result").append("<span id='infoline'>13      </span> <b class='lineinfo i13' id='notsure'>" + line[12] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
-  $("#result").append("<span id='infoline'>14      </span> <b class='lineinfo i14' id='notsure'>" + line[13] + "</b> <i class='fa fa-caret-right'></i> OTP? - First Used (date or born ID?) <b>" + neverused + "</b></br>");
-  $("#result").append("<span id='infoline'>15      </span> <b class='lineinfo i15' id='notsure'>" + line[14] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
-  $("#result").append("<span id='infoline'>16      </span> <b class='lineinfo i16' id='notsure'>" + line[15] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b></br>");
-  $("#result").append("<div id='theoricUsage'>Theoric usages left: <b>" + (loads - used) + "</b></div></br>");
+  $("#result").append("<span id='infoline'>&nbsp;1 </span> <b class='lineinfo i1 ' id='sure'>   " + cardid   + "</b> <i class='fa fa-caret-right'></i> Card ID<br />");
+  $("#result").append("<span id='infoline'>&nbsp;2 </span> <b class='lineinfo i2 ' id='notsure'>" + line[1]  + "</b> <i class='fa fa-caret-right'></i> Other ID<br />");
+  $("#result").append("<span id='infoline'>&nbsp;3 </span> <b class='lineinfo i3 ' id='notsure'>" + line[2]  + "</b> <i class='fa fa-caret-right'></i> Other ID<br />");
+  $("#result").append("<span id='infoline'>&nbsp;4 </span> <b class='lineinfo i4 ' id='sure'>   " + line[3]  + "</b> <i class='fa fa-caret-right'></i> Used <b>" + used + " time(s)</b> </span>.<br />");
+  $("#result").append("<span id='infoline'>&nbsp;5 </span> <b class='lineinfo i5 ' id='notsure'>" + bornid   + "</b> <i class='fa fa-caret-right'></i> Validation born ID <br />");
+  $("#result").append("<span id='infoline'>&nbsp;6 </span> <b class='lineinfo i6 ' id='infotag'>" + line[5]  + "</b> <i class='fa fa-caret-right'></i> Change on reload <br />");
+  $("#result").append("<span id='infoline'>&nbsp;7 </span> <b class='lineinfo i7 ' id='infotag'>" + line[6]  + "</b> <i class='fa fa-caret-right'></i> Unknown <br />");
+  $("#result").append("<span id='infoline'>&nbsp;8 </span> <b class='lineinfo i8 ' id='sure'>   " + line[7]  + "</b> <i class='fa fa-caret-right'></i> Loaded <b>" + (loads) + " time(s)</b> (Includes first buy)<br />");
+  $("#result").append("<span id='infoline'>&nbsp;9 </span> <b class='lineinfo i9 ' id='infotag'>" + line[8]  + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)<br />");
+  $("#result").append("<span id='infoline'>10      </span> <b class='lineinfo i10' id='infotag'>" + line[9]  + "</b> <i class='fa fa-caret-right'></i> Unknown <br />");
+  $("#result").append("<span id='infoline'>11      </span> <b class='lineinfo i11' id='infotag'>" + line[10] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)<br />");
+  $("#result").append("<span id='infoline'>12      </span> <b class='lineinfo i12' id='infotag'>" + line[11] + "</b> <i class='fa fa-caret-right'></i> Unknown - Changed on used after first used (date/timestamp?)<br />");
+  $("#result").append("<span id='infoline'>13      </span> <b class='lineinfo i13' id='notsure'>" + line[12] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b><br />");
+  $("#result").append("<span id='infoline'>14      </span> <b class='lineinfo i14' id='notsure'>" + line[13] + "</b> <i class='fa fa-caret-right'></i> OTP? - First Used (date or born ID?) <b>" + neverused + "</b><br />");
+  $("#result").append("<span id='infoline'>15      </span> <b class='lineinfo i15' id='notsure'>" + line[14] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b><br />");
+  $("#result").append("<span id='infoline'>16      </span> <b class='lineinfo i16' id='notsure'>" + line[15] + "</b> <i class='fa fa-caret-right'></i> Unknwon - Changed on first used and sometimes <b></b><br />");
+  $("#result").append("<div id='theoricUsage'>Theoric usages left: <b>" + (loads - used) + "</b></div><br />");
   prepareClick();
 }
 
