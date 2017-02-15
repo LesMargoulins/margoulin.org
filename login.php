@@ -42,8 +42,8 @@
                 <div class="col-lg-4">
                 </div>
                 <div class="col-lg-4">
-                </br>
-                </br>
+                <br />
+                <br />
                 <?php
                   $default = 0;
                   if (!empty($_POST['type']))
