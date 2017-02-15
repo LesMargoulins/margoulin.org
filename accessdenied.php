@@ -5,7 +5,7 @@
   $label = "accessDenied";
   $title = "Access Denied";
   $description = "You don't have access to this page.";
-  $author = "Tanguy Laloix";
+  $author = "Anonymous";
   $access = -1;
   require_once('config/load.php');
   /******* END SETTINGS *******/

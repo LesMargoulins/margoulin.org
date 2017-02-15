@@ -5,7 +5,7 @@
   $label = "Members";
   $title = "Members";
   $description = "The members list";
-  $author = "Tanguy Laloix";
+  $author = "Anonymous";
   $access = 0;
   require_once('config/load.php');
   /******* END SETTINGS *******/

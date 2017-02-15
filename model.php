@@ -5,7 +5,7 @@
   $label = "Model";
   $title = "Model";
   $description = "A model page";
-  $author = "Tanguy Laloix";
+  $author = "Anonymous";
   $access = 0;
   require_once('config/load.php');
   /******* END SETTINGS *******/
