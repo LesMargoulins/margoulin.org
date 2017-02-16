@@ -7,6 +7,7 @@
     header('Location: index.php');
     return;
   }
+
   $label = "Login";
   $title = "Login";
   $description = "";
@@ -15,7 +16,6 @@
   require_once('config/lang.php');
   require_once('config/sql.php');
   require_once('config/utilities.php');
-  require_once('config/lang.php');
   /******* END SETTINGS *******/
 ?>
 
@@ -203,7 +203,7 @@
                 </div>
                 <div class="col-md-12 center mainquotes">
                   <?php
-                  if ($lang != "en") { ?>
+                  if ($lang == "en") { ?>
                     "<i><span class="rotate"> This is not so bad. , How did I get there? , I don't get it. , It's a bit provocating. , I don't know this website. , I love it! </span></i>"<br />
                     <span class="underquotes"><span class="rotate"> - A Margoulin, - Someone, - My mom, - Fabien R., - Mark Zuckerberg, - Nobody</span></span><br />
                     <?php
