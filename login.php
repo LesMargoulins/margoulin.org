@@ -201,6 +201,18 @@
                 </div>
                 <div class="col-lg-4">
                 </div>
+                <div class="col-md-12 center mainquotes">
+                  <?php
+                  if ($lang != "en") { ?>
+                    "<i><span class="rotate"> This is not so bad. , How did I get there? , I don't get it. , It's a bit provocating. , I don't know this website. , I love it! </span></i>"<br />
+                    <span class="underquotes"><span class="rotate"> - A Margoulin, - Someone, - My mom, - Fabien R., - Mark Zuckerberg, - Nobody</span></span><br />
+                    <?php
+                  }
+                  else { ?>
+                    "<i><span class="rotate"> C'est pas trop mal. , Comment je suis arrivé là? , Je comprends rien. , C'est un peu provocateur. , Je ne connais pas ce site. , J'adore! </span></i>"<br />
+                    <span class="underquotes"><span class="rotate"> - Un Margoulin, - Quelqu'un, - Ma maman, - Fabien R., - Mark Zuckerberg, - Personne</span></span><br />
+                  <?php } ?>
+                </div>
             </div>
         </div>
     </div>
@@ -211,6 +223,13 @@
   </div>
 
   <?php require_once('parts/scripts.php'); /* SCRIPTS */ ?>
+  <script>
+  $(".rotate").textrotator({
+    animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+    separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+    speed: 4000 // How many milliseconds until the next word show.
+  });
+  </script>
 
 </body>
 </html>

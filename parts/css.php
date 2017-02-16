@@ -12,6 +12,8 @@
 <!-- Sidebar -->
 <link href="css/simple-sidebar.css" rel="stylesheet">
 <?php } ?>
+<!-- morphext -->
+<link href="css/morphext.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <!-- Custom -->

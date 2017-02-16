@@ -10,5 +10,7 @@
 <script src="js/bootstrap-select.min.js"></script>
 <!-- Bootstrap-dialog -->
 <script src="js/bootstrap-dialog.js"></script>
+<!-- simpletextrotator -->
+<script src="js/simpletextrotator.min.js"></script>
 <!-- Custom -->
 <script src="js/main.js?v=<?php echo $build; ?>"></script>
