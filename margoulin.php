@@ -73,6 +73,10 @@
   <audio class="sound" id="margoulin6" src="audio/margoulin6.mp3" type="audio/mp3"></audio>
   <audio class="sound" id="margoulin7" src="audio/margoulin7.mp3" type="audio/mp3"></audio>
   <audio class="sound" id="margoulin8" src="audio/margoulin8.mp3" type="audio/mp3"></audio>
+  <audio class="sound" id="margoulin9" src="audio/margoulin9.mp3" type="audio/mp3"></audio>
+  <audio class="sound" id="margoulin10" src="audio/margoulin10.mp3" type="audio/mp3"></audio>
+  <audio class="sound" id="margoulin11" src="audio/margoulin11.mp3" type="audio/mp3"></audio>
+  <audio class="sound" id="margoulin12" src="audio/margoulin12.mp3" type="audio/mp3"></audio>
 
   <?php require_once('parts/scripts.php'); /* SCRIPTS */ ?>
   <script src="js/margoulin.js?v=<?php echo $build; ?>"></script>
