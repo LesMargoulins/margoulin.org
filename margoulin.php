@@ -44,14 +44,14 @@
                   <h1 id="citationTitle">Margoulin</h1>
                   <?php
                   if ($lang == "en") { ?>
-                      <h3><i>"We are not a security team. <br />&nbsp;&nbsp;&nbsp;&nbsp;We're just a doushbag team."</i></h3>
+                      <h3><i>"We are not a security team. We're just a doushbag team."</i></h3>
                       <span id="citationSign">- A margoulin, 2017</span>
                       <br />
                       <button id="enter">Enter</button>
                     <?php
                   }
                   else { ?>
-                  <h3><i>"On est pas une team de sécu. <br />&nbsp;&nbsp;&nbsp;&nbsp;On est juste une team de connards."</i></h3>
+                  <h3><i>"On est pas une team de sécu. On est juste une team de connards."</i></h3>
                   <span id="citationSign">- Un margoulin, 2017</span>
                   <br />
                   <button id="enter">Entrer</button>
