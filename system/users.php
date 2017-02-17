@@ -18,13 +18,13 @@
           if ($donnees["team"] == 1 || $donnees["team"] == 2)//Super Admin, Admin
             echo "color: rgb(94, 213, 217);";
           else if ($donnees["team"] == 3)//Moderator
-            echo "color: rgb(94, 217, 140);";
+            echo "color: rgb(46, 196, 102);";
           else if ($donnees["team"] == 4)//visitor
             echo "color: rgb(228, 227, 140);";
           else if ($donnees["team"] == 6)//Banned
             echo "color: rgb(224, 50, 50);";
           else
-            echo "color: rgb(50, 50, 50);";
+            echo "color: rgb(96, 96, 96);";
         ?>'></i>
         <span class="thover"><?php echo $donnees["login"] ?></span>
         <?php if ($_SESSION["access"] > 8) { ?>

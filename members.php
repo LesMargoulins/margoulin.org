@@ -56,7 +56,7 @@
                     </tbody>
                   </table>
                     <i><span style="color: rgb(94, 213, 217);">Super Admin</span>, <span style="color: rgb(94, 213, 217);">Admin</span>,
-                    <span style="color: rgb(94, 217, 140);">Moderator</span>, <span style="color: rgb(50, 50, 50);">Member</span>, <span style="color: rgb(228, 227, 140);">Visitor</span>,
+                    <span style="color: rgb(46, 196, 102);">Moderator</span>, <span style="color: rgb(96, 96, 96);">Member</span>, <span style="color: rgb(228, 227, 140);">Visitor</span>,
                     <span style="color: rgb(224, 50, 50);">Banned</span></i>
                 </div>
                 <div class="col-lg-6">
