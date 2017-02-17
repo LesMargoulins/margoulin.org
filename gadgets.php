@@ -2,9 +2,9 @@
 
 <?php
   /** Configuration settings **/
-  $label = "Members";
-  $title = "Members";
-  $description = "The members list";
+  $label = "Gadgets";
+  $title = "Gadgets";
+  $description = "All margoulin's gadgets";
   $author = "Anonymous";
   $access = 0;
   require_once('config/load.php');
@@ -42,24 +42,17 @@
                   <?php } ?>
                   <hr style="margin-top: 0px;"/>
                 </div>
-                <div class="col-lg-6">
-                  <h2></h2>
-                  <p></p>
-                  <table class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="width: 70px;">ID</th>
-                        <th>Username</th>
-                      </tr>
-                    </thead>
-                    <tbody id="Users">
-                    </tbody>
-                  </table>
-                    <i><span style="color: rgb(94, 213, 217);">Super Admin</span>, <span style="color: rgb(94, 213, 217);">Admin</span>,
-                    <span style="color: rgb(94, 217, 140);">Moderator</span>, <span style="color: rgb(50, 50, 50);">Member</span>, <span style="color: rgb(228, 227, 140);">Visitor</span>,
-                    <span style="color: rgb(224, 50, 50);">Banned</span></i>
+                <div class="col-lg-2 module">
+                  <a href="editor.php" class="thumbnail modulethumb">
+                    Card Editor
+                    <i class="fa fa-pencil"></i>
+                  </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-2 module">
+                  <a href="extern.php" class="thumbnail modulethumb">
+                    Extern Tools
+                    <i class="fa fa-external-link-square"></i>
+                  </a>
                 </div>
             </div>
         </div>
@@ -71,10 +64,6 @@
   </div>
 
   <?php require_once('parts/scripts.php'); /* SCRIPTS */ ?>
-  <script src="js/users.js"></script>
-  <script>
-    selectUsers();
-  </script>
 
 </body>
 </html>

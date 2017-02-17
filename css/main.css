@@ -91,11 +91,18 @@
 .sover {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.sover:hover
+}
+
+.thover {
   cursor: pointer;
 }
 
-.sover:hover {
-  background-color: #eff4f6;
+.thover:hover {
+  cursor: pointer;
+  color: rgb(0, 125, 129);
 }
 
 .center {
@@ -171,4 +178,42 @@
 
 .underquotes {
   font-size: 15px;
+}
+
+.module {
+  font-size: 20px;
+}
+
+.modulethumb {
+  text-decoration: none;
+  color: #fff;
+  border-color: #333344;
+  background-color: #565674;
+  padding: 10px;
+  text-align: center;
+}
+
+.modulethumb:hover {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  color: #FFF;
+  border-color: #1a1a21;
+  background-color: #42425c;
+}
+
+.modulethumb:active {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  text-decoration: none;
+  color: #FFF;
+  border-color: #1a1a21;
+  background-color: #2a2a40;
+}
+
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
+  color: #fff;
+  border-color: #1a1a21;
+}
+
+.etoolink {
+
 }

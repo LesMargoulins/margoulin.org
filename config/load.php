@@ -24,9 +24,11 @@ $build = "1.1";
 /* Sidebar index */
 $page = array(
           //COMMON PAGE
-          "Index"               => array("url" => "index.php",        "icon" => "fa-home",          "title" => "Index",         "navTitle" => "Index",          "access" => 0),
-          "Members"             => array("url" => "members.php",      "icon" => "fa-users",         "title" => "Members",       "navTitle" => "Members",        "access" => 0),
-          "Editor"              => array("url" => "editor.php",       "icon" => "fa-pencil",        "title" => "Editor",        "navTitle" => "Card Editor",    "access" => 0),
+          "Index"               => array("url" => "index.php",        "icon" => "fa-home",                  "title" => "Index",         "navTitle" => "Index",          "access" => 0),
+          "Members"             => array("url" => "members.php",      "icon" => "fa-users",                 "title" => "Members",       "navTitle" => "Members",        "access" => 0),
+          "Editor"              => array("url" => "editor.php",       "icon" => "fa-pencil",                "title" => "Editor",        "navTitle" => "Card Editor",    "access" => 0),
+          "Gadgets"             => array("url" => "gadgets.php",      "icon" => "fa-wrench",                "title" => "Gadgets",       "navTitle" => "Gadgets",        "access" => 0),
+          "Extern"              => array("url" => "editor.php",       "icon" => "fa-external-link-square",  "title" => "Extern",        "navTitle" => "Extern Tools",   "access" => 0),
 
           //SPECIAL PAGES
           "accessDenied"        => array("url" => "accessdenied.php", "icon" => "fa-times",         "title" => "accessDenied",  "navTitle" => "Access Denied",  "access" => -1),
@@ -38,7 +40,7 @@ $page = array(
 $sidebarPage = array(
           "Index"               => $page["Index"],
           "Members"             => $page["Members"],
-          "Editor"              => $page["Editor"],
+          "Gadgets"             => $page["Gadgets"],
 );
 
 ?>

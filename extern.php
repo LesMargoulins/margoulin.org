@@ -2,9 +2,9 @@
 
 <?php
   /** Configuration settings **/
-  $label = "Members";
-  $title = "Members";
-  $description = "The members list";
+  $label = "Extern";
+  $title = "Extern Tools";
+  $description = "Usefool tools extern from margoulin.org";
   $author = "Anonymous";
   $access = 0;
   require_once('config/load.php');
@@ -43,23 +43,8 @@
                   <hr style="margin-top: 0px;"/>
                 </div>
                 <div class="col-lg-6">
-                  <h2></h2>
-                  <p></p>
-                  <table class="table table-bordered table-striped">
-                    <thead>
-                      <tr>
-                        <th style="width: 70px;">ID</th>
-                        <th>Username</th>
-                      </tr>
-                    </thead>
-                    <tbody id="Users">
-                    </tbody>
-                  </table>
-                    <i><span style="color: rgb(94, 213, 217);">Super Admin</span>, <span style="color: rgb(94, 213, 217);">Admin</span>,
-                    <span style="color: rgb(94, 217, 140);">Moderator</span>, <span style="color: rgb(50, 50, 50);">Member</span>, <span style="color: rgb(228, 227, 140);">Visitor</span>,
-                    <span style="color: rgb(224, 50, 50);">Banned</span></i>
-                </div>
-                <div class="col-lg-6">
+                  <a href="https://www.shodan.io/" class="etoolink" target="_blank">Shodan.io</a> <i class="fa fa-caret-right "></i> A search engine for Internet-connected devices and exploits.<br />
+                  <a href="https://www.exploit-db.com/" class="etoolink" target="_blank">Exploit-DB</a> <i class="fa fa-caret-right "></i> Offensive Security’s Exploit Database Archive.
                 </div>
             </div>
         </div>
@@ -71,10 +56,6 @@
   </div>
 
   <?php require_once('parts/scripts.php'); /* SCRIPTS */ ?>
-  <script src="js/users.js"></script>
-  <script>
-    selectUsers();
-  </script>
 
 </body>
 </html>
